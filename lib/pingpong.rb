@@ -6,6 +6,8 @@ class Fixnum
     self.times() do |time|
       if ( (time+1).%(15).eql?(0))
         results_array.push("PingPong")
+      elsif ((time+1).%(3).eql?(0))
+        results_array.push("Ping")
       else
         results_array.push(time+1)
       end
