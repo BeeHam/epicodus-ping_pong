@@ -13,4 +13,8 @@ describe('Fixnum#pingpong') do
   it("if divisible by 3, return Ping") do
     expect((3).pingpong().at(2)).to(eq("Ping"))
   end
+
+  it("if divisible by 5, return Pong") do
+    expect((5).pingpong().at(4)).to(eq("Pong"))
+  end
 end
